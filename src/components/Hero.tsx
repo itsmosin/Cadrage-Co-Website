@@ -27,28 +27,36 @@ const Hero = () => {
           <span className="block mt-1">Perfect Frame.</span>
         </h1>
         
-        <p className="text-base md:text-lg lg:text-xl text-foreground/70 max-w-2xl mx-auto mb-10 animate-slide-up font-normal leading-relaxed opacity-0" style={{ animationDelay: '0.4s' }}>
-          In a world rushing forward, we pause.
-          <br />
-          We frame. We remember.
+        <p className="text-xl md:text-2xl lg:text-3xl font-bold mb-2 animate-slide-up opacity-0" style={{ animationDelay: '0.3s' }}>
+          Framing Stories That Move the World.
+        </p>
+        
+        <p className="text-sm md:text-base text-foreground/60 max-w-xl mx-auto mb-10 animate-slide-up font-normal leading-relaxed opacity-0" style={{ animationDelay: '0.5s' }}>
+          For brands that believe in emotion, not just exposure.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-scale-in opacity-0" style={{ animationDelay: '0.7s' }}>
-          <Button size="lg" className="text-base px-8 py-6 rounded-full group hover:scale-105 transition-transform duration-300">
-            Get In Touch
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+          <Button 
+            size="lg" 
+            className="text-base px-8 py-6 rounded-full group hover:scale-110 hover:shadow-xl transition-all duration-500 ease-out"
+            asChild
+          >
+            <a href="https://calendly.com/business-cadrage" target="_blank" rel="noopener noreferrer">
+              Get In Touch
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-2" />
+            </a>
           </Button>
-          <Button size="lg" variant="outline" className="text-base px-8 py-6 rounded-full group hover:scale-105 transition-transform duration-300">
-            View Our Work
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="text-base px-8 py-6 rounded-full group hover:scale-110 hover:shadow-xl transition-all duration-500 ease-out"
+            asChild
+          >
+            <a href="https://docsend.com/v/935q6/cadrage" target="_blank" rel="noopener noreferrer">
+              View Our Work
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-2" />
+            </a>
           </Button>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-foreground/20 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-foreground/40 rounded-full mt-2 animate-pulse" />
         </div>
       </div>
     </section>

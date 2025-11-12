@@ -1,34 +1,55 @@
+import rafflesLogo from "@/assets/raffles-logo.jpeg";
+import hyattLogo from "@/assets/hyatt-logo.png";
+import fourSeasonsLogo from "@/assets/four-seasons-logo.png";
+import redBullLogo from "@/assets/red-bull-logo.png";
+
 const TrustedBy = () => {
   const clients = [
-    "Four Seasons",
-    "Raffles", 
-    "Hyatt",
-    "Red Bull",
-    "Nykaa Fashion",
-    "Hilton"
+    { name: "Four Seasons", logo: fourSeasonsLogo },
+    { name: "Raffles", logo: rafflesLogo },
+    { name: "Hyatt", logo: hyattLogo },
+    { name: "Red Bull", logo: redBullLogo },
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-section-bg">
+    <section className="py-16 md:py-20 bg-section-bg overflow-hidden">
       <div className="container mx-auto px-4">
         <h2 className="text-center text-xs md:text-sm font-medium text-muted-foreground mb-10 md:mb-12 tracking-widest uppercase">
-          Trusted by teams of every scale
+          Brands We've Worked With
         </h2>
         
-        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 lg:gap-12">
-          {clients.map((client, index) => (
-            <div 
-              key={index}
-              className="text-foreground/40 hover:text-foreground transition-colors duration-300 text-xs md:text-sm font-semibold tracking-wide"
-              style={{ 
-                animationDelay: `${index * 0.1}s`,
-                opacity: 0,
-                animation: 'fadeIn 0.6s ease-out forwards'
-              }}
-            >
-              {client.toUpperCase()}
+        {/* Scrolling Logo Strip */}
+        <div className="relative">
+          <div className="logo-scroll-container">
+            <div className="logo-scroll-track">
+              {/* First set of logos */}
+              {clients.map((client, index) => (
+                <div 
+                  key={`first-${index}`}
+                  className="logo-item"
+                >
+                  <img 
+                    src={client.logo} 
+                    alt={client.name}
+                    className="h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
+                  />
+                </div>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {clients.map((client, index) => (
+                <div 
+                  key={`second-${index}`}
+                  className="logo-item"
+                >
+                  <img 
+                    src={client.logo} 
+                    alt={client.name}
+                    className="h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
+                  />
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
