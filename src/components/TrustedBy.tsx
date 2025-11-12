@@ -2,9 +2,6 @@ import rafflesLogo from "@/assets/raffles-logo.jpeg";
 import hyattLogo from "@/assets/hyatt-logo.png";
 import fourSeasonsLogo from "@/assets/four-seasons-logo.png";
 import redBullLogo from "@/assets/red-bull-logo.png";
-import fairmontLogo from "@/assets/fairmont-logo.webp";
-import beautifulDestinationsLogo from "@/assets/beautiful-destinations-logo.png";
-import sayajiLogo from "@/assets/sayaji-logo.jpg";
 
 const TrustedBy = () => {
   const clients = [
@@ -12,15 +9,12 @@ const TrustedBy = () => {
     { name: "Raffles", logo: rafflesLogo },
     { name: "Hyatt", logo: hyattLogo },
     { name: "Red Bull", logo: redBullLogo },
-    { name: "Fairmont", logo: fairmontLogo },
-    { name: "Beautiful Destinations", logo: beautifulDestinationsLogo },
-    { name: "Sayaji", logo: sayajiLogo },
   ];
 
   return (
-    <section className="py-6 md:py-8 overflow-hidden">
+    <section className="py-16 md:py-20 bg-section-bg overflow-hidden">
       <div className="container mx-auto px-4">
-        <h2 className="text-center text-xs font-medium text-muted-foreground/80 mb-6 tracking-widest uppercase">
+        <h2 className="text-center text-xs md:text-sm font-medium text-muted-foreground mb-10 md:mb-12 tracking-widest uppercase">
           Brands We've Worked With
         </h2>
         
