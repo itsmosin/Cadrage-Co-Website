@@ -22,16 +22,10 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[0.95] mb-6 animate-fade-in tracking-tight opacity-0" style={{ animationDelay: '0.1s' }}>
-          We Seize The
-          <br />
-          <span className="block mt-1">Perfect Frame.</span>
+          Framing Stories That Move the World.
         </h1>
         
-        <p className="text-xl md:text-2xl lg:text-3xl font-bold mb-2 animate-slide-up opacity-0" style={{ animationDelay: '0.3s' }}>
-          Framing Stories That Move the World.
-        </p>
-        
-        <p className="text-sm md:text-base text-foreground/60 max-w-xl mx-auto mb-10 animate-slide-up font-normal leading-relaxed opacity-0" style={{ animationDelay: '0.5s' }}>
+        <p className="text-sm md:text-base text-foreground/60 max-w-xl mx-auto mb-10 animate-slide-up font-normal leading-relaxed opacity-0" style={{ animationDelay: '0.3s' }}>
           For brands that believe in emotion, not just exposure.
         </p>
 

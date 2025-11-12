@@ -2,6 +2,9 @@ import rafflesLogo from "@/assets/raffles-logo.jpeg";
 import hyattLogo from "@/assets/hyatt-logo.png";
 import fourSeasonsLogo from "@/assets/four-seasons-logo.png";
 import redBullLogo from "@/assets/red-bull-logo.png";
+import fairmontLogo from "@/assets/fairmont-logo.webp";
+import beautifulDestinationsLogo from "@/assets/beautiful-destinations-logo.png";
+import sayajiLogo from "@/assets/sayaji-logo.jpg";
 
 const TrustedBy = () => {
   const clients = [
@@ -9,6 +12,9 @@ const TrustedBy = () => {
     { name: "Raffles", logo: rafflesLogo },
     { name: "Hyatt", logo: hyattLogo },
     { name: "Red Bull", logo: redBullLogo },
+    { name: "Fairmont", logo: fairmontLogo },
+    { name: "Beautiful Destinations", logo: beautifulDestinationsLogo },
+    { name: "Sayaji", logo: sayajiLogo },
   ];
 
   return (
