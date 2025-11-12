@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroBackground from "@/assets/hero-background.png";
+import TrustedBy from "./TrustedBy";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex flex-col overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 z-0"
@@ -19,8 +20,13 @@ const Hero = () => {
         <div className="halftone-overlay absolute inset-0" />
       </div>
 
+      {/* Logo Strip at Top */}
+      <div className="relative z-10 pt-24 md:pt-28">
+        <TrustedBy />
+      </div>
+
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
+      <div className="relative z-10 container mx-auto px-4 text-center flex-1 flex flex-col items-center justify-center -mt-20">
         <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[0.95] mb-6 animate-fade-in tracking-tight opacity-0" style={{ animationDelay: '0.1s' }}>
           We Seize The
           <br />
