@@ -20,12 +20,13 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[0.95] mb-6 animate-fade-in tracking-tight opacity-0" style={{ animationDelay: '0.1s' }}>
-          Framing Stories That Move the World.
+      <div className="relative z-10 container mx-auto px-4 text-center -mt-20">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.1] mb-6 animate-fade-in tracking-tight opacity-0" style={{ animationDelay: '0.1s' }}>
+          Framing Stories<br />
+          That Move the World.
         </h1>
         
-        <p className="text-sm md:text-base text-foreground/60 max-w-xl mx-auto mb-10 animate-slide-up font-normal leading-relaxed opacity-0" style={{ animationDelay: '0.3s' }}>
+        <p className="text-sm md:text-base text-foreground/60 max-w-xl mx-auto mb-8 animate-slide-up font-normal leading-relaxed opacity-0" style={{ animationDelay: '0.3s' }}>
           For brands that believe in emotion, not just exposure.
         </p>
 
