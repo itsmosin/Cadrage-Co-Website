@@ -18,8 +18,8 @@ const BrandsCarousel = () => {
   ];
 
   return (
-    <div className="mt-16 md:mt-20 animate-fade-in opacity-0" style={{ animationDelay: '1s' }}>
-      <p className="text-center text-xs md:text-sm font-medium text-gray-700 mb-8 md:mb-10 tracking-widest uppercase font-poppins">
+    <div className="mt-48 md:mt-60 animate-fade-in opacity-0" style={{ animationDelay: '1s' }}>
+      <p className="text-center text-xs md:text-sm font-medium text-gray-700 mb-3 md:mb-2 tracking-widest uppercase font-poppins">
         BRANDS WE'VE WORKED WITH
       </p>
       
@@ -39,7 +39,7 @@ const BrandsCarousel = () => {
       </div>
 
       {/* Desktop: Flex Wrap */}
-      <div className="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6 lg:gap-8 max-w-6xl mx-auto px-4">
+      <div className="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6 py-1 lg:gap-8 max-w-6xl mx-auto px-4">
         {brands.map((brand, index) => (
           <div key={index} className="transition-transform duration-300 hover:scale-110">
             <img 
