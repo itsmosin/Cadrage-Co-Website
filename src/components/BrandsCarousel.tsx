@@ -23,32 +23,20 @@ const BrandsCarousel = () => {
         BRANDS WE'VE WORKED WITH
       </p>
       
-      {/* Mobile: Horizontal Scroll */}
-      <div className="md:hidden overflow-x-auto scrollbar-hide px-4">
-        <div className="flex items-center gap-6 pb-2" style={{ width: 'max-content' }}>
+      {/* Logos in single horizontal line, centered */}
+      <div className="w-full overflow-x-auto scrollbar-hide px-3 flex justify-center">
+        <div className="flex flex-nowrap items-center gap-9 py-2" style={{ width: 'max-content' }}>
           {brands.map((brand, index) => (
-            <div key={index} className="flex-shrink-0 transition-transform duration-300 hover:scale-110">
+            <div key={index} className="flex-shrink-0 px-2 transition-transform duration-300 hover:scale-110">
               <img 
                 src={brand.logo} 
                 alt={brand.name}
-                className="h-10 w-auto object-contain max-w-[100px]  grayscale hover:grayscale-0 transition-all duration-300" 
+                className="h-16 md:h-20 w-auto object-contain max-w-[165px] drop-shadow-lg rounded-lg bg-white"
+                style={{ filter: 'grayscale(0%)', opacity: 1 }}
               />
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Desktop: Flex Wrap */}
-      <div className="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6 py-1 lg:gap-8 max-w-6xl mx-auto px-4">
-        {brands.map((brand, index) => (
-          <div key={index} className="transition-transform duration-300 hover:scale-110">
-            <img 
-              src={brand.logo} 
-              alt={brand.name}
-              className="h-10 md:h-12 w-auto object-contain max-w-[100px]  grayscale hover:grayscale-0 transition-all duration-300" 
-            />
-          </div>
-        ))}
       </div>
     </div>
   );
